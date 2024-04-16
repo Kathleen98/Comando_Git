@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: #FBF8DD ;
+    color: #01044A;
+}
+
+
+.container{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container_flex{
+    padding: 1rem;
+}
+
+caption{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container_flex_table, tr,th{
+    border: solid 1px #01044A;
+    border-collapse: collapse;
+}
+
+.primeira_coluna{
+    width: 10vw;
+    font-weight: bold;
+}
+
+.segunda_coluna{
+    width: 50vw;
+    font-weight: bold;
+}
+
