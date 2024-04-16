@@ -1,190 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt-bre">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Comandos Git</title>
 </head>
 <body>
     <div class="container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Comando</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>
-                        git init
-                    </th>
-                    <th>
-                        Comando para iniciar o versionamento do projeto, com ele é criada uma pasta oculta ".git" com as configurações necessárias para o controle de versionamento
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git status
-                    </th>
-                    <th>
-                        Comando para verificar como está o versionamento do projeto, exemplo, quais alterações, arquivos estão versionados ou não.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git add
-                    </th>
-                    <th>
-                        Comando para adicionar alterações realizadas, pode ser usado o comando "git add ." para adicionar todas as alterações de uma vez ou "git add X" usando o nome do arquivo que deseja adicionar.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git commit -m
-                    </th>
-                    <th>
-                        Comando para realizar comentário antes de subir a alteração.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git commit -a -m ""
-                    </th>
-                    <th>
-                        Comando que une o "git add" + "git commit -M" realizando assim a inclusão de todas as alterações e adicionando comentário.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git branch -m main
-                    </th>
-                    <th>
-                        Com esse comando, renomeamos a branch principal para "main", essa alteração é feita por convenção.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git remote add origin
-                    </th>
-                    <th>
-                        Após esse comando, colocamos a URL do repositório do GitHub para linkar o repositório local, no caso, a pasta do projeto, com o repositório remoto.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git push -u origin main
-                    </th>
-                    <th>
-                        Comando para enviar os arquivos do repositório local para o remoto.
-                    </th>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        Comandos
-                    </th>
-                    <th>
-                        Ação
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>
-                        git branch
-                    </th>
-                    <th>
-                        Comando para ver as branchs existentes.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git checkout
-                    </th>
-                    <th>
-                        Comando para mudar de branch, é só adicionar o nome da branch após o comando.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git checkout -b
-                    </th>
-                    <th>
-                        Comando para criar uma nova branch
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git push --set-upstream origin "nome da branch"
-                    </th>
-                    <th>
-                        Comando para linkar a nova branch ao repositório remoto (após esse comando é possível dar git push)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git merge
-                    </th>
-                    <th>
-                        Comando para unir as branchs, exemplo: Estou na branch main e quero unir com a desenvolvimento "git merge desenvolvimento". Após o merge, é preciso dar "git push" para unificar o código no repositório remoto.
-                    </th>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Comando</th>
-                    <th>Ação</th>
-                </tr>
-                <tr>
-                    <th>
-                        git pull
-                    </th>
-                    <th>
-                        Puxa os arquivo do repositório remoto para o local.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git clone
-                    </th>
-                    <th>
-                        Após esse comando, adicione a URL do repositório que deseja clonar, caso queira trocar o nome da pasto do projeto, dê um espaço e escreva o nome que deseja
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git clean -f
-                    </th>
-                    <th>
-                        remove arquivos, ele remove apenas arquivos não adicionados?
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git checkout
-                    </th>
-                    <th>
-                        + o nome do arquivo faz com que o arquivo que foi modificado volte para seu ponto de partida, antes de realizar alterações no código.
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        git log
-                    </th>
-                    <th>
-                        Comando que mostra todo o tracker realizado no repositório, conseguimos visualizar todos os commits
-                    </th>
-                </tr>
-            </thead>
-        </table>
+        <div class="">
+            <div class="container_flex">
+                <table class="container_flex_table">
+                    <caption>Comandos Local</caption>
+                    <thead>
+                        <tr class="primeira_linha">
+                            <th class="primeira_coluna">
+                                Comando
+                            </th>
+                            <th class="segunda_coluna">
+                                Ação
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                git init
+                            </th>
+                            <th>
+                                Comando para iniciar o versionamento do projeto, com ele é criada uma pasta oculta ".git" com as configurações necessárias para o controle de versionamento
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git status
+                            </th>
+                            <th>
+                                Comando para verificar como está o versionamento do projeto, exemplo, quais alterações, arquivos estão versionados ou não.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git add
+                            </th>
+                            <th>
+                                Comando para adicionar alterações realizadas, pode ser usado o comando "git add ." para adicionar todas as alterações de uma vez ou "git add X" usando o nome do arquivo que deseja adicionar.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git commit -m
+                            </th>
+                            <th>
+                                Comando para realizar comentário antes de subir a alteração.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git commit -a -m ""
+                            </th>
+                            <th>
+                                Comando que une o "git add" + "git commit -M" realizando assim a inclusão de todas as alterações e adicionando comentário.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git branch -m main
+                            </th>
+                            <th>
+                                Com esse comando, renomeamos a branch principal para "main", essa alteração é feita por convenção.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git remote add origin
+                            </th>
+                            <th>
+                                Após esse comando, colocamos a URL do repositório do GitHub para linkar o repositório local, no caso, a pasta do projeto, com o repositório remoto.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git push -u origin main
+                            </th>
+                            <th>
+                                Comando para enviar os arquivos do repositório local para o remoto.
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="container_flex">
+                <table class="container_flex_table">
+                    <caption>Comandos Branchs</caption>
+                    <thead>
+                        <tr>
+                            <th class="primeira_coluna">
+                                Comandos
+                            </th>
+                            <th class="segunda_coluna">
+                                Ação
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                git branch
+                            </th>
+                            <th>
+                                Comando para ver as branchs existentes.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git checkout
+                            </th>
+                            <th>
+                                Comando para mudar de branch, é só adicionar o nome da branch após o comando.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git checkout -b
+                            </th>
+                            <th>
+                                Comando para criar uma nova branch
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git push --set-upstream origin "nome da branch"
+                            </th>
+                            <th>
+                                Comando para linkar a nova branch ao repositório remoto (após esse comando é possível dar git push)
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git merge
+                            </th>
+                            <th>
+                                Comando para unir as branchs, exemplo: Estou na branch main e quero unir com a desenvolvimento "git merge desenvolvimento". Após o merge, é preciso dar "git push" para unificar o código no repositório remoto.
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="container_flex">
+                <table class="container_flex_table">
+                    <caption>Comandos Remoto</caption>
+                    <thead>
+                        <tr>
+                            <th class="primeira_coluna">
+                                Comando
+                            </th>
+                            <th class="segunda_coluna">
+                                Ação
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                git pull
+                            </th>
+                            <th>
+                                Puxa os arquivo do repositório remoto para o local.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git clone
+                            </th>
+                            <th>
+                                Após esse comando, adicione a URL do repositório que deseja clonar, caso queira trocar o nome da pasto do projeto, dê um espaço e escreva o nome que deseja
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git clean -f
+                            </th>
+                            <th>
+                                remove arquivos, ele remove apenas arquivos não adicionados?
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git checkout
+                            </th>
+                            <th>
+                                + o nome do arquivo faz com que o arquivo que foi modificado volte para seu ponto de partida, antes de realizar alterações no código.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                git log
+                            </th>
+                            <th>
+                                Comando que mostra todo o tracker realizado no repositório, conseguimos visualizar todos os commits
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 </html>
